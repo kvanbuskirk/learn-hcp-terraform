@@ -1,11 +1,14 @@
-variable "instance_name" {
-  description = "Value of the EC2 instance's Name tag."
-  type        = string
-  default     = "learn-terraform"
+variable "region" {
+  description = "AWS region"
+  default     = "us-east-1"
 }
 
 variable "instance_type" {
-  description = "The EC2 instance's type."
-  type        = string
+  description = "Type of EC2 instance to provision"
   default     = "t2.micro"
+}
+
+variable "instance_name" {
+  description = "EC2 instance name"
+  default     = "Provisioned by Terraform"
 }
