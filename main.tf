@@ -19,7 +19,7 @@ data "aws_ami" "amazon-linux-2" {
 }
 
 resource "aws_instance" "amazon-linux-2" {
-  ami           = data.aws_ami.amazon-linux-2.id
+  ami           = ami-098e39bafa7e7303d  #data.aws_ami.amazon-linux-2.id
   instance_type = var.instance_type
 
   tags = {
